@@ -124,7 +124,7 @@
 
 	*/
 			$expectedTable = $this->createMySQLXMLDataSet(dirname(__FILE__).'/fixture/state_testInsertToDB.xml')->getTable("level_2");
-			$this->assertTablesEqual($queryTable->getTable("level_2"), $expectedTable);
+			$this->assertTablesEqual($queryTable, $expectedTable);
 		}
 	}
 ?>
